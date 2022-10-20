@@ -20,12 +20,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/script.js" defer></script>
     <title>Kris Portfolio</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header__logo">
-        <code>&lt;devkris&gt;<code>
+        <code>&lt;devkris&gt;</code>
       </div>
 
       <!-- No text or label to say what it is, must use area label -->
@@ -52,14 +53,16 @@
         Hi, I am <strong>Kris&nbsp;Orel</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-      <img src="img/humanoid-squirrel.png" alt="an oil painting of a squirrel with a galaxy background" class="intro__image"/>
+      <img
+        src="img/humanoid-squirrel.png"
+        alt="an oil painting of a squirrel with a galaxy background"
+        class="intro__image"
+      />
     </section>
 
     <!-- My services -->
     <section class="my-services" id="my-services">
-      <div class="services__background">
-          
-      </div>
+      <div class="services__background"></div>
       <h2 class="section__title section__title--services">What I do</h2>
 
       <!-- Services -->
@@ -71,7 +74,7 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. At saepe
             unde ipsam! Rem reiciendis ipsam rerum, minus nesciunt aut deleniti
             odit dolorem molestiae quisquam expedita, provident ut sapiente
-            cupiditate eveniet? Possimus rerum laboriosam 
+            cupiditate eveniet? Possimus rerum laboriosam
           </p>
         </div>
 
@@ -82,7 +85,7 @@
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
             incidunt cupiditate natus quidem amet dicta voluptatibus praesentium
             quaerat quo deserunt nisi sequi fugit iste voluptas adipisci
-            deleniti, ipsam id quia? Nulla, eum commodi 
+            deleniti, ipsam id quia? Nulla, eum commodi
           </p>
         </div>
 
@@ -93,7 +96,6 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ab
             eveniet incidunt provident laborum temporibus amet accusamus dicta
             expedita reprehenderit. Itaque ratione, soluta saepe iure
-
           </p>
         </div>
       </div>
@@ -107,87 +109,109 @@
         Developer based out of Mississauga
       </p>
       <div class="about__body">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minima praesentium itaque officia iure voluptatem ducimus quisquam cum, eius illum? Cumque cupiditate quas iusto quam a alias est fugiat saepe?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, officiis cupiditate. Iste, ut debitis natus magni cumque blanditiis placeat dolore facere dicta reiciendis omnis possimus aliquam quae officiis. Similique, fugiat.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minima
+          praesentium itaque officia iure voluptatem ducimus quisquam cum, eius
+          illum? Cumque cupiditate quas iusto quam a alias est fugiat saepe?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, officiis
+          cupiditate. Iste, ut debitis natus magni cumque blanditiis placeat
+          dolore facere dicta reiciendis omnis possimus aliquam quae officiis.
+          Similique, fugiat.
+        </p>
       </div>
-      <img src="img/sketch-cat.png" alt="a sketch of a humanoid cat and regular cat in a field of sunflowers" class="about__image"/>
+      <img
+        src="img/sketch-cat.png"
+        alt="a sketch of a humanoid cat and regular cat in a field of sunflowers"
+        class="about__image"
+      />
     </section>
 
     <!-- My Work -->
-    <section class="work" id="work">
+    <section class="my-work" id="work">
       <h2 class="section__title section__title--work">My Work</h2>
       <p class="section__subtitle section__subtitle--work"></p>
 
       <div class="portfolio">
         <!-- Portfolio Item 1 -->
+
         <a href="#" class="portfolio__item">
-          <img src="img/portfolio-01.jpg" alt="" />
+          <img src="img/tenzies-react.jpg" alt="" class="portfolio__image" />
         </a>
 
         <!-- Portfolio Item 2 -->
         <a href="#" class="portfolio__item">
-          <img src="img/portfolio-02.jpg" alt="" />
+          <img src="img/portfolio-02.jpg" alt="" class="portfolio__image" />
         </a>
 
         <!-- Portfolio Item 3 -->
         <a href="#" class="portfolio__item">
-          <img src="img/portfolio-03.jpg" alt="" />
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__image" />
         </a>
 
         <!-- Portfolio Item 4 -->
         <a href="#" class="portfolio__item">
-          <img src="img/portfolio-04.jpg" alt="" />
+          <img src="img/portfolio-04.jpg" alt="" class="portfolio__image" />
         </a>
 
         <!-- Portfolio Item 5 -->
         <a href="#" class="portfolio__item">
-          <img src="img/portfolio-05.jpg" alt="" />
+          <img src="img/portfolio-05.jpg" alt="" class="portfolio__image" />
         </a>
 
         <!-- Portfolio Item 6 -->
         <a href="#" class="portfolio__item">
-          <img src="img/portfolio-06.jpg" alt="" />
+          <img src="img/portfolio-06.jpg" alt="" class="portfolio__image" />
         </a>
 
         <!-- Portfolio Item 7 -->
         <a href="#" class="portfolio__item">
-          <img src="img/portfolio-07.jpg" alt="" />
+          <img src="img/portfolio-07.jpg" alt="" class="portfolio__image" />
         </a>
 
         <!-- Portfolio Item 8 -->
         <a href="#" class="portfolio__item">
-          <img src="img/portfolio-08.jpg" alt="" />
+          <img src="img/portfolio-08.jpg" alt="" class="portfolio__image" />
         </a>
 
         <!-- Portfolio Item 9 -->
         <a href="#" class="portfolio__item">
-          <img src="img/portfolio-09.jpg" alt="" />
+          <img src="img/portfolio-09.jpg" alt="" class="portfolio__image" />
         </a>
 
         <!-- Portfolio Item 10 -->
         <a href="#" class="portfolio__item">
-          <img src="img/portfolio-10.jpg" alt="" />
+          <img src="img/portfolio-10.jpg" alt="" class="portfolio__image" />
         </a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-      <a href="mailto:krissyorel@hotmail.com" class="footer__link"
-        >krissyorel@hotmail.com</a
-      >
+    <footer class="footer">
       <ul class="connect-list">
         <li class="connect-list__item">
-          <a href="#" class="connect-list__link">a</a>
+          <a href="mailto:krissyorel@hotmail.com" class="connect-list__link">
+            <i class="fas fa-envelope"></i>
+          </a>
         </li>
         <li class="connect-list__item">
-          <a href="#" class="connect-list__link">b</a>
+          <a
+            href="https://github.com/orelkris"
+            target="_blank"
+            class="connect-list__link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
         </li>
         <li class="connect-list__item">
-          <a href="#" class="connect-list__link">c</a>
-        </li>
-        <li class="connect-list__item">
-          <a href="#" class="connect-list__link">d</a>
+          <a
+            href="https://www.linkedin.com/in/kristina-orel/"
+            target="_blank"
+            class="connect-list__link"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
         </li>
       </ul>
     </footer>
