@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Update fonts later -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Montserrat+Alternates:ital,wght@0,300;0,700;1,500|Source+Sans+Pro:200,300,600,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Kris Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__logo">
+        <code>&lt;devkris&gt;<code>
+      </div>
+
+      <!-- No text or label to say what it is, must use area label -->
+      <button class="header__nav-toggle" aria-label="toggle navigation">
+        <span class="header__nav-menu"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#my-services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Kris&nbsp;Orel</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <img src="img/humanoid-squirrel.png" alt="an oil painting of a squirrel with a galaxy background" class="intro__image"/>
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="my-services">
+      <div class="services__background">
+          
+      </div>
+      <h2 class="section__title section__title--services">What I do</h2>
+
+      <!-- Services -->
+      <div class="services">
+        <!-- service -->
+        <div class="service">
+          <h3 class="service__title">Design + Development</h3>
+          <p class="service__content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At saepe
+            unde ipsam! Rem reiciendis ipsam rerum, minus nesciunt aut deleniti
+            odit dolorem molestiae quisquam expedita, provident ut sapiente
+            cupiditate eveniet? Possimus rerum laboriosam 
+          </p>
+        </div>
+
+        <!-- service -->
+        <div class="service">
+          <h3 class="service__title">E-Commerce</h3>
+          <p class="service__content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+            incidunt cupiditate natus quidem amet dicta voluptatibus praesentium
+            quaerat quo deserunt nisi sequi fugit iste voluptas adipisci
+            deleniti, ipsam id quia? Nulla, eum commodi 
+          </p>
+        </div>
+
+        <!-- service -->
+        <div class="service">
+          <h3 class="service__title">WordPress</h3>
+          <p class="service__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ab
+            eveniet incidunt provident laborum temporibus amet accusamus dicta
+            expedita reprehenderit. Itaque ratione, soluta saepe iure
+
+          </p>
+        </div>
+      </div>
+
+      <button href="#work" class="btn">see my work</button>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Developer based out of Mississauga
+      </p>
+      <div class="about__body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minima praesentium itaque officia iure voluptatem ducimus quisquam cum, eius illum? Cumque cupiditate quas iusto quam a alias est fugiat saepe?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, officiis cupiditate. Iste, ut debitis natus magni cumque blanditiis placeat dolore facere dicta reiciendis omnis possimus aliquam quae officiis. Similique, fugiat.</p>
+      </div>
+      <img src="img/sketch-cat.png" alt="a sketch of a humanoid cat and regular cat in a field of sunflowers" class="about__image"/>
+    </section>
+
+    <!-- My Work -->
+    <section class="work" id="work">
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle--work"></p>
+
+      <div class="portfolio">
+        <!-- Portfolio Item 1 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-01.jpg" alt="" />
+        </a>
+
+        <!-- Portfolio Item 2 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-02.jpg" alt="" />
+        </a>
+
+        <!-- Portfolio Item 3 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-03.jpg" alt="" />
+        </a>
+
+        <!-- Portfolio Item 4 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-04.jpg" alt="" />
+        </a>
+
+        <!-- Portfolio Item 5 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-05.jpg" alt="" />
+        </a>
+
+        <!-- Portfolio Item 6 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-06.jpg" alt="" />
+        </a>
+
+        <!-- Portfolio Item 7 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-07.jpg" alt="" />
+        </a>
+
+        <!-- Portfolio Item 8 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-08.jpg" alt="" />
+        </a>
+
+        <!-- Portfolio Item 9 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-09.jpg" alt="" />
+        </a>
+
+        <!-- Portfolio Item 10 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-10.jpg" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a href="mailto:krissyorel@hotmail.com" class="footer__link"
+        >krissyorel@hotmail.com</a
+      >
+      <ul class="connect-list">
+        <li class="connect-list__item">
+          <a href="#" class="connect-list__link">a</a>
+        </li>
+        <li class="connect-list__item">
+          <a href="#" class="connect-list__link">b</a>
+        </li>
+        <li class="connect-list__item">
+          <a href="#" class="connect-list__link">c</a>
+        </li>
+        <li class="connect-list__item">
+          <a href="#" class="connect-list__link">d</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
