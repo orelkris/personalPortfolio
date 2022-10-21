@@ -393,18 +393,18 @@ strong {
   background-color: var(--clr-dark);
   background: linear-gradient(
       180deg,
-      rgba(18, 189, 180, 0.589),
-      rgba(50, 87, 209, 0.904),
-      rgba(19, 177, 90, 0.815)
+      rgb(18, 189, 180),
+      rgb(50, 87, 209),
+      rgb(19, 177, 90)
     ),
     url(../img/humanoid-circuit.png);
   border-radius: 0.6rem;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: darken;
+  background-blend-mode: multiply;
   background-attachment: fixed;
-  opacity: 0.3;
+  opacity: 0.15;
   position: absolute;
   top: 0;
   left: 0;
