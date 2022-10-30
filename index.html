@@ -35,20 +35,22 @@
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#top" class="nav__link">Top</a></li>
           <li class="nav__item">
-            <a href="#my-services" class="nav__link">My Services</a>
+            <a href="#my-services" class="nav__link">My Skills</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#about" class="nav__link">About Me</a>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <!-- Introduction -->
-    <section class="intro" id="home">
+    <section class="intro" id="top">
       <h1 class="section__title section__title--intro">
         Hi, I am <strong>Kris&nbsp;Orel</strong>
       </h1>
@@ -61,47 +63,49 @@
     </section>
 
     <!-- My services -->
-    <section class="my-services" id="my-services">
-      <div class="services__background"></div>
-      <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services__container" id="my-services">
+      <section class="my-services">
+        <div class="services__background"></div>
+        <h2 class="section__title section__title--services">What I do</h2>
 
-      <!-- Services -->
-      <div class="services">
-        <!-- service -->
-        <div class="service">
-          <h3 class="service__title">Design + Development</h3>
-          <p class="service__content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At saepe
-            unde ipsam! Rem reiciendis ipsam rerum, minus nesciunt aut deleniti
-            odit dolorem molestiae quisquam expedita, provident ut sapiente
-            cupiditate eveniet? Possimus rerum laboriosam
-          </p>
+        <!-- Services -->
+        <div class="services">
+          <!-- service -->
+          <div class="service">
+            <h3 class="service__title">Design + Development</h3>
+            <p class="service__content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At saepe
+              unde ipsam! Rem reiciendis ipsam rerum, minus nesciunt aut
+              deleniti odit dolorem molestiae quisquam expedita, provident ut
+              sapiente cupiditate eveniet? Possimus rerum laboriosam
+            </p>
+          </div>
+
+          <!-- service -->
+          <div class="service">
+            <h3 class="service__title">E-Commerce</h3>
+            <p class="service__content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              incidunt cupiditate natus quidem amet dicta voluptatibus
+              praesentium quaerat quo deserunt nisi sequi fugit iste voluptas
+              adipisci deleniti, ipsam id quia? Nulla, eum commodi
+            </p>
+          </div>
+
+          <!-- service -->
+          <div class="service">
+            <h3 class="service__title">WordPress</h3>
+            <p class="service__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              ab eveniet incidunt provident laborum temporibus amet accusamus
+              dicta expedita reprehenderit. Itaque ratione, soluta saepe iure
+            </p>
+          </div>
         </div>
 
-        <!-- service -->
-        <div class="service">
-          <h3 class="service__title">E-Commerce</h3>
-          <p class="service__content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-            incidunt cupiditate natus quidem amet dicta voluptatibus praesentium
-            quaerat quo deserunt nisi sequi fugit iste voluptas adipisci
-            deleniti, ipsam id quia? Nulla, eum commodi
-          </p>
-        </div>
-
-        <!-- service -->
-        <div class="service">
-          <h3 class="service__title">WordPress</h3>
-          <p class="service__content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ab
-            eveniet incidunt provident laborum temporibus amet accusamus dicta
-            expedita reprehenderit. Itaque ratione, soluta saepe iure
-          </p>
-        </div>
-      </div>
-
-      <button href="#work" class="btn">see my work</button>
-    </section>
+        <a href="#work" class="btn">see my work</a>
+      </section>
+    </div>
 
     <section class="about" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
@@ -135,55 +139,162 @@
 
       <div class="portfolio">
         <!-- Portfolio Item 1 -->
-
-        <a href="#" class="portfolio__item">
-          <img src="img/tenzies-react.jpg" alt="" class="portfolio__image" />
-        </a>
+        <div class="portfolio__item">
+          <div class="portfolio__side portfolio__side--front">
+            <img src="img/tenzies-react.jpg" alt="" class="portfolio__image" />
+          </div>
+          <div class="portfolio__side portfolio__side--back">
+            <a
+              class="btn"
+              href="https://orelkris.github.io/tenzies/"
+              target="_blank"
+              >Tenzies</a
+            >
+          </div>
+        </div>
 
         <!-- Portfolio Item 2 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-02.jpg" alt="" class="portfolio__image" />
-        </a>
+        <div class="portfolio__item">
+          <div class="portfolio__side portfolio__side--front">
+            <img src="img/portfolio-02.jpg" alt="" class="portfolio__image" />
+          </div>
+          <div class="portfolio__side portfolio__side--back">
+            <a
+              class="btn"
+              href="https://orelkris.github.io/dall-e-fan-page/"
+              target="_blank"
+              >Dall e fanpage</a
+            >
+          </div>
+        </div>
 
         <!-- Portfolio Item 3 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-03.jpg" alt="" class="portfolio__image" />
-        </a>
+        <div class="portfolio__item">
+          <div class="portfolio__side portfolio__side--front">
+            <img src="img/portfolio-03.jpg" alt="" class="portfolio__image" />
+          </div>
+          <div class="portfolio__side portfolio__side--back">
+            <a
+              class="btn"
+              href="https://orelkris.github.io/dall-e-fan-page/"
+              target="_blank"
+            >
+              Dall e fanpage
+            </a>
+          </div>
+        </div>
 
         <!-- Portfolio Item 4 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-04.jpg" alt="" class="portfolio__image" />
-        </a>
+        <div class="portfolio__item">
+          <div class="portfolio__side portfolio__side--front">
+            <img src="img/portfolio-04.jpg" alt="" class="portfolio__image" />
+          </div>
+          <div class="portfolio__side portfolio__side--back">
+            <a
+              class="btn"
+              href="https://orelkris.github.io/dall-e-fan-page/"
+              target="_blank"
+            >
+              Dall e fanpage
+            </a>
+          </div>
+        </div>
 
         <!-- Portfolio Item 5 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-05.jpg" alt="" class="portfolio__image" />
-        </a>
+        <div class="portfolio__item">
+          <div class="portfolio__side portfolio__side--front">
+            <img src="img/portfolio-05.jpg" alt="" class="portfolio__image" />
+          </div>
+          <div class="portfolio__side portfolio__side--back">
+            <a
+              class="btn"
+              href="https://orelkris.github.io/dall-e-fan-page/"
+              target="_blank"
+            >
+              Dall e fanpage
+            </a>
+          </div>
+        </div>
 
         <!-- Portfolio Item 6 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-06.jpg" alt="" class="portfolio__image" />
-        </a>
+        <div class="portfolio__item">
+          <div class="portfolio__side portfolio__side--front">
+            <img src="img/portfolio-06.jpg" alt="" class="portfolio__image" />
+          </div>
+          <div class="portfolio__side portfolio__side--back">
+            <a
+              class="btn"
+              href="https://orelkris.github.io/dall-e-fan-page/"
+              target="_blank"
+            >
+              Dall e fanpage
+            </a>
+          </div>
+        </div>
 
         <!-- Portfolio Item 7 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-07.jpg" alt="" class="portfolio__image" />
-        </a>
+        <div class="portfolio__item">
+          <div class="portfolio__side portfolio__side--front">
+            <img src="img/portfolio-07.jpg" alt="" class="portfolio__image" />
+          </div>
+          <div class="portfolio__side portfolio__side--back">
+            <a
+              class="btn"
+              href="https://orelkris.github.io/dall-e-fan-page/"
+              target="_blank"
+            >
+              Dall e fanpage
+            </a>
+          </div>
+        </div>
 
         <!-- Portfolio Item 8 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-08.jpg" alt="" class="portfolio__image" />
-        </a>
+        <div class="portfolio__item">
+          <div class="portfolio__side portfolio__side--front">
+            <img src="img/portfolio-08.jpg" alt="" class="portfolio__image" />
+          </div>
+          <div class="portfolio__side portfolio__side--back">
+            <a
+              class="btn"
+              href="https://orelkris.github.io/dall-e-fan-page/"
+              target="_blank"
+            >
+              Dall e fanpage
+            </a>
+          </div>
+        </div>
 
         <!-- Portfolio Item 9 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-09.jpg" alt="" class="portfolio__image" />
-        </a>
+        <div class="portfolio__item">
+          <div class="portfolio__side portfolio__side--front">
+            <img src="img/portfolio-09.jpg" alt="" class="portfolio__image" />
+          </div>
+          <div class="portfolio__side portfolio__side--back">
+            <a
+              class="btn"
+              href="https://orelkris.github.io/dall-e-fan-page/"
+              target="_blank"
+            >
+              Dall e fanpage
+            </a>
+          </div>
+        </div>
 
         <!-- Portfolio Item 10 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-10.jpg" alt="" class="portfolio__image" />
-        </a>
+        <div class="portfolio__item">
+          <div class="portfolio__side portfolio__side--front">
+            <img src="img/portfolio-10.jpg" alt="" class="portfolio__image" />
+          </div>
+          <div class="portfolio__side portfolio__side--back">
+            <a
+              class="btn"
+              href="https://orelkris.github.io/dall-e-fan-page/"
+              target="_blank"
+            >
+              Dall e fanpage
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
