@@ -18,6 +18,7 @@
   --clr-dark: #5c5a5a;
   --clr-darkest: #2b2929;
   --clr-accent: #dde016;
+  --clr-accent-light: #d6d873;
   --clr-accent-secondary: rgba(102, 14, 243, 0.6);
 
   /* font size */
@@ -158,10 +159,32 @@ a {
   outline-offset: 3px;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-secondary:hover {
   cursor: pointer;
   filter: brightness(90%);
   transform: scale(1.1);
+}
+
+.btn-secondary {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+  text-transform: uppercase;
+  background: linear-gradient(
+    rgba(102, 14, 243, 0.3) 10%,
+    rgba(102, 14, 243, 0.4) 20%,
+    var(--clr-accent-secondary) 40%,
+    var(--clr-accent-secondary) 60%,
+    rgba(102, 14, 243, 0.4) 80%,
+    rgba(102, 14, 243, 0.3) 90%
+  );
+  color: var(--clr-darkest);
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border-radius: 0.5em;
+
+  transition: all 350ms;
 }
 
 strong {
@@ -562,6 +585,38 @@ strong {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.node--front {
+  background: #3c873a;
+}
+
+.node--back {
+  background: #68a063;
+}
+
+.react--front {
+  background: #61dbfb;
+}
+
+.react--back {
+  background: #61dbfbaa;
+}
+
+.js--front {
+  background: #f0db4f;
+}
+
+.js--back {
+  background: #f0db4faa;
+}
+
+.layout--front {
+  background: rgb(101, 25, 223, 0.8);
+}
+
+.layout--back {
+  background: rgba(127, 56, 241, 0.6);
+}
+
 .portfolio__image,
 .portfolio__item {
   border-radius: 0.5rem;
@@ -576,17 +631,26 @@ strong {
 
 .portfolio__side {
   border-radius: 0.5rem;
-  background-color: var(--clr-accent);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 1rem;
   backface-visibility: hidden;
+  box-shadow: var(--box-shadow);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
+.portfolio__side h3 {
+  margin: 0;
+}
 .portfolio__side--back {
   width: 100%;
   transform: rotateY(-180deg);
@@ -608,15 +672,14 @@ strong {
 .portfolio__image {
   object-fit: cover;
   width: 100%;
-  height: 20rem;
+  height: 15rem;
   margin: 0;
-  box-shadow: var(--box-shadow);
 }
 
-@media screen and (min-width: 651px) and (max-width: 850px) {
+@media screen and (min-width: 761px) and (max-width: 850px) {
   .portfolio__item {
     width: 100%;
-    min-height: 30rem;
+    min-height: 20rem;
     perspective: 100rem;
     -moz-perspective: 100rem;
   }
@@ -624,9 +687,19 @@ strong {
   .portfolio__image {
     object-fit: cover;
     width: 100%;
-    height: 30rem;
+    height: 15rem;
     margin: 0;
     box-shadow: var(--box-shadow);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .portfolio__item {
+    min-height: 30rem;
+  }
+
+  .portfolio__image {
+    height: 25rem;
   }
 }
 
